@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h2>
+    Welcome to {{ title }}!
+  </h2>
+  <scandit-sdk-barcode-picker #picker
+                              [scanSettings]="settings"
+                              [playSoundOnScan]="true"
+                              [accessCamera]="true"
+                              (scan)="onScan($event)"
+                              (error)="onError($event)"></scandit-sdk-barcode-picker>
+
+</div>
